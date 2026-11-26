@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="اكتشف الأماكن السياحية والتاريخية والطبيعية في الأردن، وتعرف على أجمل الوجهات والأنشطة السياحية.">
+
+    <title>اكتشف الأردن | Jordan Tourism</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                اكتشف الأردن
+            </a>
+
+            <button class="menu-btn" id="menu-btn" aria-label="فتح القائمة">
+                ☰
+            </button>
+
+            <nav>
+
+                <ul class="nav-links" id="nav-links">
+
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأردن</a></li>
+                    <li><a href="places.html">الأماكن السياحية</a></li>
+                    <li><a href="types.html">أنواع السياحة</a></li>
+                    <li><a href="map.html">الخريطة</a></li>
+                    <li><a href="plan.html">خطط رحلتك</a></li>
+                    <li><a href="favorites.html">المفضلة</a></li>
+                    <li><a href="gallery.html">معرض الصور</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="faq.html">الأسئلة الشائعة</a></li>
+
+                </ul>
+
+            </nav>
+
+            <button id="dark-toggle"
+                    class="dark-toggle btn btn-outline"
+                    type="button">
+                الوضع الليلي
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>اكتشف سحر الأردن وجماله</h1>
+
+            <p>
+                رحلة بين التاريخ والطبيعة والمغامرة،
+                من البتراء الوردية إلى صحراء وادي رم،
+                ومن البحر الميت إلى جبال عجلون.
+            </p>
+
+            <a href="places.html" class="btn">
+                اكتشف الأماكن السياحية
+            </a>
+
+            <a href="plan.html" class="btn btn-secondary">
+                خطط رحلتك
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT JORDAN -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>مرحبًا بك في الأردن</h2>
+                <p>أرض الحضارات والتاريخ والطبيعة المتنوعة</p>
+            </div>
+
+            <div class="details-content">
+
+                <p>
+                    يُعد الأردن من الوجهات السياحية المميزة،
+                    حيث يجمع بين المواقع الأثرية العريقة
+                    والمناظر الطبيعية والتقاليد الثقافية الأصيلة.
+                </p>
+
+                <p>
+                    يضم الأردن العديد من الأماكن السياحية،
+                    مثل البتراء وجرش ووادي رم والبحر الميت
+                    وقلعة الكرك.
+                </p>
+
+                <a href="about.html" class="btn">
+                    تعرف على الأردن
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAMOUS TOURIST PLACES -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>أشهر الوجهات السياحية</h2>
+                <p>اكتشف مجموعة من أجمل الأماكن في الأردن</p>
+            </div>
+
+            <div class="cards-grid">
+
+                <!-- PETRA -->
+                <article class="place-card">
+
+                    <img src="images/home/petra.jpg" alt="مدينة البتراء" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>البتراء</h3>
+
+                        <p>
+                            المدينة الوردية، إحدى أبرز الوجهات الأثرية في العالم.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="petra.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'petra',
+                                    name:'البتراء',
+                                    image:'images/home/petra.jpg',
+                                    description:'المدينة الوردية الأثرية.',
+                                    link:'petra.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- JERASH -->
+                <article class="place-card">
+
+                    <img src="images/home/jerash.jpg" alt="مدينة جرش" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>جرش</h3>
+
+                        <p>
+                            مدينة أثرية تشتهر بشوارعها الرومانية وأعمدتها ومسارحها.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="jerash.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'jerash',
+                                    name:'جرش',
+                                    image:'images/home/jerash.jpg',
+                                    description:'مدينة أثرية رومانية.',
+                                    link:'jerash.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- WADI RUM -->
+                <article class="place-card">
+
+                    <img src="images/home/wadi-rum.jpg" alt="وادي رم" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>وادي رم</h3>
+
+                        <p>
+                            صحراء ساحرة تتميز بالجبال الرملية والتكوينات الصخرية.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="wadirum.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'wadirum',
+                                    name:'وادي رم',
+                                    image:'images/home/wadi-rum.jpg',
+                                    description:'صحراء طبيعية ساحرة.',
+                                    link:'wadirum.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DEAD SEA -->
+                <article class="place-card">
+
+                    <img src="images/home/dead-sea.jpg" alt="البحر الميت" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>البحر الميت</h3>
+
+                        <p>
+                            وجهة طبيعية تشتهر بمياهها شديدة الملوحة وموقعها المنخفض.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="deadsea.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'deadsea',
+                                    name:'البحر الميت',
+                                    image:'images/home/dead-sea.jpg',
+                                    description:'وجهة طبيعية مميزة.',
+                                    link:'deadsea.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- KARAK -->
+                <article class="place-card">
+
+                    <img src="images/home/karak-castle.jpg" alt="قلعة الكرك" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>قلعة الكرك</h3>
+
+                        <p>
+                            قلعة تاريخية بارزة تتميز بموقعها المرتفع وعمارتها الدفاعية.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="karak.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'karak',
+                                    name:'قلعة الكرك',
+                                    image:'images/home/karak-castle.jpg',
+                                    description:'قلعة تاريخية في الكرك.',
+                                    link:'karak.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AJLOUN -->
+                <article class="place-card">
+
+                    <img src="images/home/ajloun-reserve.jpg" alt="عجلون" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>عجلون</h3>
+
+                        <p>
+                            منطقة تجمع بين الغابات والطبيعة الخضراء وقلعة عجلون التاريخية.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="ajloun.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'ajloun',
+                                    name:'عجلون',
+                                    image:'images/home/ajloun-reserve.jpg',
+                                    description:'طبيعة خضراء وقلعة تاريخية.',
+                                    link:'ajloun.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div style="text-align:center; margin-top:30px;">
+
+                <a href="places.html" class="btn">
+                    عرض جميع الأماكن السياحية
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LESSER-KNOWN PLACES -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>اكتشف أماكن أقل شهرة</h2>
+                <p>وجهات أردنية تستحق الزيارة والتعرف عليها</p>
+            </div>
+
+            <div class="cards-grid">
+
+                <!-- WADI BEN HAMMAD -->
+                <article class="place-card">
+
+                    <img src="images/home/wadi-ben-hammad.jpg" alt="وادي بن حماد" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>وادي بن حماد</h3>
+
+                        <p>
+                            وادٍ طبيعي في محافظة الكرك، يتميز بالمياه والتكوينات الصخرية.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="wadi-ben-hammad.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'wadi-ben-hammad',
+                                    name:'وادي بن حماد',
+images/wadi-ben-hammad/wadi-ben-hammad-main.jpg
+                                    description:'وادي طبيعي يتميز بالمياه والتكوينات الصخرية.',
+                                    link:'wadi-ben-hammad.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- UMM QAIS -->
+                <article class="place-card">
+
+                    <img src="images/home/umm-qais.jpg" alt="أم قيس" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>أم قيس</h3>
+
+                        <p>
+                            موقع أثري يتميز بإطلالاته الطبيعية وآثاره التاريخية في شمال الأردن.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="ummqais.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'umm-qais',
+                                    name:'أم قيس',
+                                    image:'images/home/umm-qais.jpg',
+                                    description:'موقع أثري يتميز بإطلالاته وآثاره التاريخية.',
+                                    link:'ummqais.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- UMM AL JIMAL -->
+                <article class="place-card">
+
+                    <img src="images/home/umm-al-jimal.jpg" alt="أم الجمال" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>أم الجمال</h3>
+
+                        <p>
+                            موقع أثري يشتهر بمبانيه الحجرية السوداء وتراثه المعماري.
+                        </p>
+
+                        <div class="card-actions">
+
+                            <a href="ummaljimal.html" class="btn">اكتشف المزيد</a>
+
+                            <button type="button" class="btn btn-secondary"
+                                onclick="addFavorite({
+                                    id:'umm-al-jimal',
+                                    name:'أم الجمال',
+images/ummaljimal/umm-al-jimal-main.jpg
+                                    description:'مدينة أثرية تشتهر بمبانيها الحجرية السوداء.',
+                                    link:'ummaljimal.html'
+                                })">
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TOURISM TYPES -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>أنواع السياحة في الأردن</h2>
+                <p>تجارب متنوعة تناسب اهتمامات الزوار</p>
+            </div>
+
+            <div class="cards-grid">
+
+                <article class="card">
+
+                    <div class="card-content">
+
+                        <h3>السياحة التاريخية والأثرية</h3>
+
+                        <p>
+                            اكتشاف المدن القديمة والقلاع والمواقع الأثرية.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-content">
+
+                        <h3>السياحة الطبيعية</h3>
+
+                        <p>
+                            الاستمتاع بالجبال والأودية والمحميات الطبيعية.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-content">
+
+                        <h3>السياحة العلاجية والاستجمامية</h3>
+
+                        <p>
+                            زيارة البحر الميت والمناطق المعروفة بالاستجمام.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div style="text-align:center; margin-top:30px;">
+
+                <a href="types.html" class="btn">
+                    تعرف على أنواع السياحة
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRIP PLANNER -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="details-content" style="text-align:center;">
+
+                <h2>هل أنت مستعد لاكتشاف الأردن؟</h2>
+
+                <p>
+                    اختر الأماكن التي ترغب بزيارتها
+                    وابدأ في إعداد برنامجك السياحي.
+                </p>
+
+                <a href="plan.html" class="btn">
+                    ابدأ تخطيط رحلتك
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-intro">
+
+                <h3>اكتشف الأردن</h3>
+
+                <p>
+                    دليلك للتعرف على الأماكن السياحية والتاريخية
+                    والطبيعية في الأردن.
+                </p>
+
+            </div>
+
+            <div class="footer-columns">
+
+                <div class="footer-column">
+
+                    <h4>روابط مهمة</h4>
+
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن الأردن</a></li>
+                        <li><a href="places.html">الأماكن السياحية</a></li>
+                        <li><a href="gallery.html">معرض الصور</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h4>استكشف الموقع</h4>
+
+                    <ul>
+                        <li><a href="map.html">الخريطة</a></li>
+                        <li><a href="plan.html">خطط رحلتك</a></li>
+                        <li><a href="favorites.html">المفضلة</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    جميع الحقوق محفوظة © 2026 - اكتشف الأردن
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top"
+        class="back-to-top"
+        aria-label="العودة إلى أعلى الصفحة">
+
+        ↑
+
+    </button>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

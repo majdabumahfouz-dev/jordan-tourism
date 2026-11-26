@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="شاهد أجمل الصور السياحية للأماكن الطبيعية والتاريخية في الأردن.">
+
+    <title>معرض الصور | اكتشف الأردن</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">اكتشف الأردن</a>
+
+            <button class="menu-btn" id="menu-btn" aria-label="فتح القائمة">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">عن الأردن</a>
+                <a href="places.html">الأماكن السياحية</a>
+                <a href="types.html">أنواع السياحة</a>
+                <a href="map.html">الخريطة</a>
+                <a href="plan.html">خطط رحلتك</a>
+                <a href="favorites.html">المفضلة</a>
+                <a href="gallery.html" class="active">معرض الصور</a>
+                <a href="contact.html">اتصل بنا</a>
+                <a href="faq.html">الأسئلة الشائعة</a>
+            </nav>
+
+            <button id="dark-toggle"
+                    class="dark-toggle btn btn-outline"
+                    type="button">
+                الوضع الليلي
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+
+        <div class="container">
+
+            <h1>معرض الصور السياحية</h1>
+
+            <p>
+                جولة مصورة بين أجمل المعالم التاريخية
+                والطبيعية والتراثية في الأردن.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Introduction -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>اكتشف جمال الأردن بالصور</h2>
+
+                <p>
+                    استمتع بمشاهدة مجموعة من الصور التي
+                    تعكس تنوع الأماكن السياحية في المملكة.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Filter -->
+    <section class="section alternate-section">
+
+        <div class="container">
+
+            <div class="gallery-filters">
+
+                <button class="gallery-filter active" data-filter="all">
+                    جميع الصور
+                </button>
+
+                <button class="gallery-filter" data-filter="historical">
+                    أماكن تاريخية
+                </button>
+
+                <button class="gallery-filter" data-filter="nature">
+                    طبيعة
+                </button>
+
+                <button class="gallery-filter" data-filter="religious">
+                    أماكن دينية
+                </button>
+
+                <button class="gallery-filter" data-filter="adventure">
+                    مغامرات
+                </button>
+
+            </div>
+
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+
+
+                <!-- Petra -->
+                <div class="gallery-item" data-category="historical">
+
+                    <img src="images/home/petra.jpg" alt="مدينة البتراء الوردية">
+
+                    <div class="gallery-caption">
+                        <h3>البتراء</h3>
+                        <p>المدينة الوردية وإحدى عجائب الدنيا السبع.</p>
+                        <a href="petra.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Jerash -->
+                <div class="gallery-item" data-category="historical">
+
+                    <img src="images/home/jerash.jpg" alt="مدينة جرش الأثرية">
+
+                    <div class="gallery-caption">
+                        <h3>جرش</h3>
+                        <p>مدينة أثرية تعكس روعة الحضارة الرومانية.</p>
+                        <a href="jerash.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Wadi Rum -->
+                <div class="gallery-item" data-category="nature">
+
+                    <img src="images/home/wadi-rum.jpg" alt="صحراء وادي رم">
+
+                    <div class="gallery-caption">
+                        <h3>وادي رم</h3>
+                        <p>مناظر صحراوية وجبال صخرية مذهلة.</p>
+                        <a href="wadirum.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Dead Sea -->
+                <div class="gallery-item" data-category="nature">
+
+                    <img src="images/home/dead-sea.jpg" alt="البحر الميت">
+
+                    <div class="gallery-caption">
+                        <h3>البحر الميت</h3>
+                        <p>أخفض منطقة على سطح اليابسة.</p>
+                        <a href="deadsea.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Ajloun -->
+                <div class="gallery-item" data-category="nature">
+
+                    <img src="images/home/ajloun-reserve.jpg" alt="محمية غابات عجلون">
+
+                    <div class="gallery-caption">
+                        <h3>عجلون</h3>
+                        <p>الغابات الخضراء والتنوع الطبيعي.</p>
+                        <a href="ajloun.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Karak -->
+                <div class="gallery-item" data-category="historical">
+
+                    <img src="images/home/karak-castle.jpg" alt="قلعة الكرك">
+
+                    <div class="gallery-caption">
+                        <h3>قلعة الكرك</h3>
+                        <p>قلعة تاريخية شاهدة على أحداث العصور الوسطى.</p>
+                        <a href="karak.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Umm Qais -->
+                <div class="gallery-item" data-category="historical">
+
+                    <img src="images/home/umm-qais.jpg" alt="أم قيس الأثرية">
+
+                    <div class="gallery-caption">
+                        <h3>أم قيس</h3>
+                        <p>آثار تاريخية وإطلالات جميلة على الطبيعة.</p>
+                        <a href="ummqais.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Madaba -->
+                <div class="gallery-item" data-category="religious">
+
+                    <img src="images/madaba/madaba-main.jpg" alt="مدينة مادبا">
+
+                    <div class="gallery-caption">
+                        <h3>مادبا</h3>
+                        <p>مدينة الفسيفساء والتاريخ الديني.</p>
+                        <a href="madaba.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Mount Nebo -->
+                <div class="gallery-item" data-category="religious">
+
+                    <img src="images/nebo/nebo-main.webp" alt="جبل نيبو">
+
+                    <div class="gallery-caption">
+                        <h3>جبل نيبو</h3>
+                        <p>موقع ديني وتاريخي ذو إطلالة مميزة.</p>
+                        <a href="nebo.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Wadi Ben Hammad -->
+                <div class="gallery-item" data-category="adventure">
+
+                    <img src="images/wadi-ben-hammad/wadi-ben-hammad-main.jpg" alt="وادي بن حماد">
+
+                    <div class="gallery-caption">
+                        <h3>وادي بن حماد</h3>
+                        <p>مياه جارية وشلالات وتكوينات صخرية.</p>
+                        <a href="wadi-ben-hammad.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Umm Al Jimal -->
+                <div class="gallery-item" data-category="historical">
+
+                    <img src="images/ummaljimal/umm-al-jimal-main.jpg" alt="أم الجمال">
+
+                    <div class="gallery-caption">
+                        <h3>أم الجمال</h3>
+                        <p>مدينة أثرية تتميز بمبانيها الحجرية السوداء.</p>
+                        <a href="ummaljimal.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+                <!-- Qasr Amra -->
+                <div class="gallery-item" data-category="historical">
+
+                    <img src="images/qasramra/qasr-amra.jpg" alt="قصر عمرة">
+
+                    <div class="gallery-caption">
+                        <h3>قصر عمرة</h3>
+                        <p>قصر أموي يشتهر برسوماته الجدارية.</p>
+                        <a href="qasramra.html">اكتشف المكان</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Note -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>الأردن يستحق الاكتشاف</h2>
+
+                <p>
+                    من المدن الأثرية إلى الصحاري والجبال
+                    والوديان، يقدم الأردن تجارب سياحية متنوعة
+                    لكل زائر.
+                </p>
+
+                <a href="places.html" class="btn">
+                    اكتشف جميع الأماكن السياحية
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-intro">
+
+                <h3>اكتشف الأردن</h3>
+
+                <p>
+                    دليلك للتعرف على الأماكن السياحية والتاريخية
+                    والطبيعية في الأردن.
+                </p>
+
+            </div>
+
+            <div class="footer-columns">
+
+                <div class="footer-column">
+
+                    <h4>روابط مهمة</h4>
+
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن الأردن</a></li>
+                        <li><a href="places.html">الأماكن السياحية</a></li>
+                        <li><a href="gallery.html">معرض الصور</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h4>استكشف الموقع</h4>
+
+                    <ul>
+                        <li><a href="map.html">الخريطة</a></li>
+                        <li><a href="plan.html">خطط رحلتك</a></li>
+                        <li><a href="favorites.html">المفضلة</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    جميع الحقوق محفوظة © 2026 - اكتشف الأردن
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back To Top -->
+    <button
+        id="back-to-top"
+        class="back-to-top"
+        aria-label="العودة للأعلى">
+
+        ↑
+
+    </button>
+
+
+    <!-- Shared JavaScript -->
+    <script src="script.js"></script>
+
+
+    <!-- Gallery Filter Script -->
+    <script>
+
+        const galleryButtons = document.querySelectorAll(".gallery-filter");
+
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+
+        galleryButtons.forEach(function(button) {
+
+            button.addEventListener("click", function() {
+
+                const selectedFilter = button.getAttribute("data-filter");
+
+
+                // إزالة التحديد عن جميع الأزرار
+                galleryButtons.forEach(function(btn) {
+
+                    btn.classList.remove("active");
+
+                });
+
+
+                // تحديد الزر المختار
+                button.classList.add("active");
+
+
+                // تصفية الصور حسب النوع
+                galleryItems.forEach(function(item) {
+
+                    const category = item.getAttribute("data-category");
+
+                    if (selectedFilter === "all" || category === selectedFilter) {
+
+                        item.style.display = "";
+
+                    } else {
+
+                        item.style.display = "none";
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

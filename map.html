@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="استكشف الخريطة السياحية للأردن وتعرف على مواقع أشهر الوجهات السياحية والأثرية والطبيعية في المملكة.">
+
+    <title>الخريطة السياحية | اكتشف الأردن</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Map height only -->
+    <style>
+        #jordan-map-display {
+            width: 100%;
+            height: 500px;
+            z-index: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">اكتشف الأردن</a>
+
+            <button class="menu-btn" id="menu-btn" aria-label="فتح القائمة">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">عن الأردن</a>
+                <a href="places.html">الأماكن السياحية</a>
+                <a href="types.html">أنواع السياحة</a>
+                <a href="map.html" class="active">الخريطة</a>
+                <a href="plan.html">خطط رحلتك</a>
+                <a href="favorites.html">المفضلة</a>
+                <a href="gallery.html">معرض الصور</a>
+                <a href="contact.html">اتصل بنا</a>
+                <a href="faq.html">الأسئلة الشائعة</a>
+            </nav>
+
+            <button id="dark-toggle"
+                    class="dark-toggle btn btn-outline"
+                    type="button">
+                الوضع الليلي
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>الخريطة السياحية للأردن</h1>
+
+            <p>
+                اكتشف مواقع الوجهات السياحية الأردنية
+                وتعرّف على أماكن وجودها في مختلف المحافظات
+            </p>
+
+            <a href="#jordan-map" class="btn">
+                استكشف الخريطة
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Breadcrumb -->
+    <section class="container">
+
+        <p class="breadcrumb">
+            <a href="index.html">الرئيسية</a> /
+            الخريطة السياحية
+        </p>
+
+    </section>
+
+
+    <!-- Introduction -->
+    <section class="section container">
+
+        <h2 class="section-title">اكتشف الأردن على الخريطة</h2>
+
+        <div class="place-details">
+
+            <img src="images/petra/petra-main.jpg"
+                 class="place-image"
+                 alt="خريطة الأردن">
+
+            <div class="place-text">
+
+                <p>
+                    يتميز الأردن بتنوع جغرافي وسياحي كبير،
+                    حيث تنتشر المواقع الأثرية والطبيعية
+                    والدينية والترفيهية في مختلف محافظاته.
+                </p>
+
+                <p>
+                    تساعدك هذه الصفحة على التعرف على مواقع
+                    الوجهات السياحية واختيار المكان الذي
+                    ترغب في زيارته.
+                </p>
+
+                <p>
+                    يمكنك استخدام الخريطة التفاعلية أو
+                    اختيار إحدى الوجهات من القائمة
+                    للوصول إلى موقعها الجغرافي.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Interactive Map -->
+    <section class="section alternate-section" id="jordan-map">
+
+        <div class="container">
+
+            <h2 class="section-title">الخريطة التفاعلية للأردن</h2>
+
+            <p>
+                استخدم الخريطة للتكبير والتصغير وتحريكها
+                واستكشاف المناطق الجغرافية في الأردن.
+            </p>
+
+            <div class="map-frame">
+
+                <div id="jordan-map-display"></div>
+
+            </div>
+
+            <p class="map-note">
+                تحتاج الخريطة إلى اتصال بالإنترنت حتى تظهر.
+            </p>
+
+            <div class="favorites-actions">
+
+                <a
+                    href="https://www.openstreetmap.org/#map=7/31.2/36.2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn">
+                    فتح الخريطة بحجم كامل
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Destinations -->
+    <section class="section container">
+
+        <h2 class="section-title">مواقع الوجهات السياحية</h2>
+
+        <p>
+            اختر إحدى الوجهات التالية لعرض موقعها
+            على خرائط Google.
+        </p>
+
+        <div class="cards-grid">
+
+
+            <!-- Petra -->
+            <div class="card">
+
+                <img src="images/petra/petra-main.jpg" alt="البتراء">
+
+                <div class="card-content">
+
+                    <h3>البتراء</h3>
+
+                    <p>محافظة معان</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Petra+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="petra.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Jerash -->
+            <div class="card">
+
+                <img src="images/jerash/jerash-main.jpg" alt="جرش">
+
+                <div class="card-content">
+
+                    <h3>جرش</h3>
+
+                    <p>محافظة جرش</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Jerash+Archaeological+City+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="jerash.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Karak -->
+            <div class="card">
+
+                <img src="images/karak/karak-main.jpg" alt="قلعة الكرك">
+
+                <div class="card-content">
+
+                    <h3>قلعة الكرك</h3>
+
+                    <p>محافظة الكرك</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Karak+Castle+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="karak.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Ajloun -->
+            <div class="card">
+
+                <img src="images/ajloun/ajloun-main.JPG" alt="عجلون">
+
+                <div class="card-content">
+
+                    <h3>عجلون</h3>
+
+                    <p>محافظة عجلون</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ajloun+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="ajloun.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Umm Qais -->
+            <div class="card">
+
+                <img src="images/ummqais/umm-qais-main.jpg" alt="أم قيس">
+
+                <div class="card-content">
+
+                    <h3>أم قيس</h3>
+
+                    <p>محافظة إربد</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Umm+Qais+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="ummqais.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Madaba -->
+            <div class="card">
+
+                <img src="images/madaba/madaba-main.jpg" alt="مادبا">
+
+                <div class="card-content">
+
+                    <h3>مادبا</h3>
+
+                    <p>محافظة مادبا</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Madaba+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="madaba.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Mount Nebo -->
+            <div class="card">
+
+                <img src="images/nebo/nebo-main.webp" alt="جبل نيبو">
+
+                <div class="card-content">
+
+                    <h3>جبل نيبو</h3>
+
+                    <p>محافظة مادبا</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Mount+Nebo+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="nebo.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Wadi Rum -->
+            <div class="card">
+
+                <img src="images/wadirum/wadi-rum-main.jpg" alt="وادي رم">
+
+                <div class="card-content">
+
+                    <h3>وادي رم</h3>
+
+                    <p>محافظة العقبة</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Wadi+Rum+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="wadirum.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dead Sea -->
+            <div class="card">
+
+                <img src="images/deadsea/dead-sea-main.jpg" alt="البحر الميت">
+
+                <div class="card-content">
+
+                    <h3>البحر الميت</h3>
+
+                    <p>منطقة البحر الميت</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Dead+Sea+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="deadsea.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Wadi Ben Hammad -->
+            <div class="card">
+
+                <img src="images/wadi-ben-hammad/wadi-ben-hammad-main.jpg" alt="وادي بن حماد">
+
+                <div class="card-content">
+
+                    <h3>وادي بن حماد</h3>
+
+                    <p>محافظة الكرك</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Wadi+Bin+Hammad+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="wadi-ben-hammad.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Umm Al Jimal -->
+            <div class="card">
+
+                <img src="images/ummaljimal/umm-al-jimal-main.jpg" alt="أم الجمال">
+
+                <div class="card-content">
+
+                    <h3>أم الجمال</h3>
+
+                    <p>محافظة المفرق</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Umm+Al+Jimal+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="ummaljimal.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Qasr Amra -->
+            <div class="card">
+
+                <img src="images/qasramra/qasr-amra.jpg" alt="قصر عمرة">
+
+                <div class="card-content">
+
+                    <h3>قصر عمرة</h3>
+
+                    <p>الصحراء الشرقية الأردنية</p>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Qasr+Amra+Jordan"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        عرض الموقع
+                    </a>
+
+                    <a href="qasramra.html" class="btn btn-secondary">
+                        تفاصيل الوجهة
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Map Benefits -->
+    <section class="section alternate-section">
+
+        <div class="container">
+
+            <h2 class="section-title">كيف تساعدك الخريطة؟</h2>
+
+            <div class="cards-grid">
+
+                <div class="card">
+                    <div class="card-content">
+
+                        <h3>معرفة المواقع</h3>
+
+                        <p>
+                            التعرف على موقع كل وجهة
+                            سياحية في الأردن.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+
+                        <h3>اختيار الوجهة</h3>
+
+                        <p>
+                            مقارنة المناطق واختيار
+                            المكان المناسب للزيارة.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+
+                        <h3>الوصول بسهولة</h3>
+
+                        <p>
+                            فتح الموقع في خرائط Google
+                            للحصول على الاتجاهات.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+
+                        <h3>تخطيط الرحلة</h3>
+
+                        <p>
+                            التعرف على توزيع الوجهات
+                            السياحية في مختلف المناطق.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Planning -->
+    <section class="section container">
+
+        <h2 class="section-title">هل اخترت وجهتك؟</h2>
+
+        <p>
+            بعد استكشاف الخريطة، يمكنك الانتقال
+            إلى صفحة تخطيط الرحلات لتنظيم زيارتك.
+        </p>
+
+        <div class="favorites-actions">
+
+            <a href="plan.html" class="btn">
+                خطط لرحلتك
+            </a>
+
+            <a href="places.html" class="btn btn-secondary">
+                تصفح جميع الأماكن
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-intro">
+
+                <h3>اكتشف الأردن</h3>
+
+                <p>
+                    دليلك للتعرف على الأماكن السياحية والتاريخية
+                    والطبيعية في الأردن.
+                </p>
+
+            </div>
+
+            <div class="footer-columns">
+
+                <div class="footer-column">
+
+                    <h4>روابط مهمة</h4>
+
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن الأردن</a></li>
+                        <li><a href="places.html">الأماكن السياحية</a></li>
+                        <li><a href="gallery.html">معرض الصور</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h4>استكشف الموقع</h4>
+
+                    <ul>
+                        <li><a href="map.html">الخريطة</a></li>
+                        <li><a href="plan.html">خطط رحلتك</a></li>
+                        <li><a href="favorites.html">المفضلة</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    جميع الحقوق محفوظة © 2026 - اكتشف الأردن
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <button id="back-to-top" class="back-to-top" aria-label="العودة إلى الأعلى">
+        ↑
+    </button>
+
+
+    <!-- Leaflet JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Interactive Map -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const mapElement = document.getElementById("jordan-map-display");
+
+            if (!mapElement || typeof L === "undefined") {
+                console.error("تعذر تحميل مكتبة Leaflet أو عنصر الخريطة.");
+                return;
+            }
+
+            const map = L.map("jordan-map-display").setView([31.2, 36.2], 7);
+
+L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+    {
+        attribution: "Tiles &copy; Esri",
+        maxZoom: 19
+    }
+).addTo(map);
+            const destinations = [
+                { name: "البتراء", coords: [30.3285, 35.4444] },
+                { name: "جرش", coords: [32.2747, 35.8961] },
+                { name: "قلعة الكرك", coords: [31.1854, 35.7048] },
+                { name: "عجلون", coords: [32.3326, 35.7517] },
+                { name: "أم قيس", coords: [32.6535, 35.6846] },
+                { name: "مادبا", coords: [31.7195, 35.7939] },
+                { name: "جبل نيبو", coords: [31.7684, 35.7252] },
+                { name: "وادي رم", coords: [29.5321, 35.4200] },
+                { name: "البحر الميت", coords: [31.5590, 35.4732] },
+                { name: "وادي بن حماد", coords: [31.25, 35.65] },
+                { name: "أم الجمال", coords: [32.327, 36.368] },
+                { name: "قصر عمرة", coords: [31.801, 36.586] }
+            ];
+
+            destinations.forEach(function (place) {
+
+                L.marker(place.coords)
+                    .addTo(map)
+                    .bindPopup("<strong>" + place.name + "</strong>");
+
+            });
+
+        });
+    </script>
+
+
+    <!-- Original Site JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

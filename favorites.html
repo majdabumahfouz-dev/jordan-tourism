@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="احتفظ بالأماكن السياحية المفضلة لديك واكتشفها بسهولة.">
+
+    <title>الأماكن المفضلة | اكتشف الأردن</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <!-- Header -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">اكتشف الأردن</a>
+
+            <button class="menu-btn" id="menu-btn" aria-label="فتح القائمة">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">عن الأردن</a>
+                <a href="places.html">الأماكن السياحية</a>
+                <a href="types.html">أنواع السياحة</a>
+                <a href="map.html">الخريطة</a>
+                <a href="plan.html">خطط رحلتك</a>
+                <a href="favorites.html" class="active">المفضلة</a>
+                <a href="gallery.html">معرض الصور</a>
+                <a href="contact.html">اتصل بنا</a>
+                <a href="faq.html">الأسئلة الشائعة</a>
+            </nav>
+
+          <button id="dark-toggle"
+                    class="dark-toggle btn btn-outline"
+                    type="button">
+                الوضع الليلي
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+
+        <div class="container">
+
+            <h1>أماكنك السياحية المفضلة</h1>
+
+            <p>
+                اجمع الأماكن التي أعجبتك في الأردن
+                واحتفظ بها لتعود إليها في أي وقت.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Favorites Section -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>قائمة الأماكن المفضلة</h2>
+
+                <p>
+                    هنا ستظهر الأماكن التي أضفتها إلى المفضلة
+                    من صفحات الموقع المختلفة.
+                </p>
+
+            </div>
+
+
+            <!-- Favorites Counter -->
+            <div class="favorites-info">
+
+                <h3>
+                    الأماكن المحفوظة:
+                    <span id="favorites-count">0</span>
+                </h3>
+
+            </div>
+
+
+            <!-- Favorites List -->
+            <div id="favorites-container" class="cards-grid">
+
+                <!-- JavaScript displays saved places here -->
+
+            </div>
+
+
+            <!-- Favorites Actions -->
+            <div class="favorites-actions">
+
+                <button
+                    type="button"
+                    class="btn btn-outline"
+                    onclick="clearAllFavorites()">
+
+                    حذف جميع المفضلة
+
+                </button>
+
+                <a href="places.html" class="btn">
+                    إضافة أماكن جديدة
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Helpful Information -->
+    <section class="section section-light">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>كيف تستخدم قائمة المفضلة؟</h2>
+
+                <p>
+                    اتبع هذه الخطوات للاحتفاظ بالأماكن التي تهمك.
+                </p>
+
+            </div>
+
+
+            <div class="cards-grid">
+
+                <div class="card">
+
+                    <div class="card-content">
+
+                        <h3>1. اختر المكان</h3>
+
+                        <p>
+                            تصفح الأماكن السياحية واختر
+                            الوجهة التي ترغب في زيارتها.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-content">
+
+                        <h3>2. أضف إلى المفضلة</h3>
+
+                        <p>
+                            اضغط على زر إضافة إلى المفضلة
+                            الموجود في صفحة المكان.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-content">
+
+                        <h3>3. ارجع إلى قائمتك</h3>
+
+                        <p>
+                            افتح صفحة المفضلة لمشاهدة
+                            الأماكن التي قمت بحفظها.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-intro">
+
+            <h3>اكتشف الأردن</h3>
+
+            <p>
+                دليلك للتعرف على الأماكن السياحية والتاريخية
+                والطبيعية في الأردن.
+            </p>
+
+        </div>
+
+        <div class="footer-columns">
+
+            <div class="footer-column">
+
+                <h4>روابط مهمة</h4>
+
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الأردن</a></li>
+                    <li><a href="places.html">الأماكن السياحية</a></li>
+                    <li><a href="gallery.html">معرض الصور</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>استكشف الموقع</h4>
+
+                <ul>
+                    <li><a href="map.html">الخريطة</a></li>
+                    <li><a href="plan.html">خطط رحلتك</a></li>
+                    <li><a href="favorites.html">المفضلة</a></li>
+                    <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p class="copyright">
+                جميع الحقوق محفوظة © 2026 - اكتشف الأردن
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+    <!-- Back To Top -->
+    <button
+        id="back-to-top"
+        class="back-to-top"
+        aria-label="العودة للأعلى">
+
+        ↑
+
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
